@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  
+    <string name="app_name">Footprints</string>
+    <string name="hint_km">in km</string>
+    <string name="not_support_gps">GPS nicht aktiv oder Position nicht auffindbar</string> 
+    <string name="not_support_network">Netzwerk-Provider nicht aktiv oder Position nicht auffindbar</string>
+    <string name="saddress">Serveradresse: </string>
+    <string name="iphint">IP des Servers</string>
+    <string name="accept">Bestätigen</string>
+
+</resources>

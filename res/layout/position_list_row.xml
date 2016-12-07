@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#FFFFFF" >
+
+        <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+		android:paddingLeft="10dip"
+		android:paddingTop="10dip"
+		android:paddingBottom="10dip"
+        android:id="@+id/position_img" />
+        
+    <TextView
+    android:id="@+id/nametxt"
+   	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:layout_toRightOf="@+id/position_img"
+	android:paddingLeft="10dip"
+    android:paddingTop="15dip"
+	android:textColor="#000000"/>
+    
+   <TextView
+    android:id="@+id/descriptiontxt"
+   	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:layout_toRightOf="@+id/calculation"
+	android:layout_below="@+id/nametxt"
+	/>
+   
+      <TextView
+    android:id="@+id/calculation"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:layout_below="@+id/nametxt"
+	android:layout_toRightOf="@+id/position_img"
+	android:paddingLeft="10dip"
+	android:layout_gravity="right"
+	/>
+         <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:id="@+id/arrowcf_img" 
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:paddingTop="20dip"
+        android:paddingRight="10dip"/>
+
+</RelativeLayout>

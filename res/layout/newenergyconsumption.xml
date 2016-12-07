@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/nametxt"
+        android:layout_marginRight="9dp"
+        android:ems="10" 
+        android:hint="Verbrauchsname">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/energytypestxt"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headline1"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="16dp"
+        android:text="Energietyp:"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+ 		/>
+
+    <Spinner
+        android:id="@+id/energytypes_spinner"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/description"
+        android:layout_alignLeft="@+id/description" 
+		android:layout_below="@+id/view2"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headline1"
+        android:layout_below="@+id/energytypes_spinner"
+        android:layout_marginTop="14dp"
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/distancetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headline1"
+		android:layout_below="@+id/description"
+        android:layout_marginTop="18dp"
+        android:text="Verbrauch: "        
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    
+    <EditText
+        android:id="@+id/consumption"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"  
+        android:layout_below="@+id/description"
+        android:digits="0123456789."
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:inputType="numberDecimal"
+        android:hint="in kWh" />
+
+    <TextView
+        android:id="@+id/kwh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/energytypes_spinner"
+		android:layout_below="@+id/description"
+        android:layout_marginTop="17dp"
+        android:text="kWh"        
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/headline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="14dp"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="16dp"
+        android:text="Verbrauch hinzufügen"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headline1"
+        android:layout_marginTop="14dp"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/energytypes_spinner"
+        android:layout_alignLeft="@+id/headline1"
+        android:layout_below="@+id/consumption"
+        android:layout_marginTop="17dp"
+        android:text="Bestätigen" />
+
+
+
+</RelativeLayout>

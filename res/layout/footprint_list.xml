@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dip">
+   <TextView
+            android:id="@+id/txtview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:text="Footprint hinzufügen:" />
+                <Spinner
+            android:id="@+id/fptypes_spinner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/addbtn"
+            android:layout_marginLeft="10dp"
+             />
+                
+        <ImageButton
+            android:id="@+id/addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtview"
+            android:layout_toRightOf="@+id/fptypes_spinner"
+            android:src="@drawable/ic_menu_add" 
+            android:layout_marginLeft="5dp"
+            android:paddingTop="5dp"
+            android:background="#006600"/>
+
+    
+<View
+	android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090"
+        android:layout_below="@+id/fptypes_spinner" />
+        <ListView
+            android:id="@+id/overviewlist"
+            android:layout_width="fill_parent"
+            android:layout_height="420dp"
+            android:layout_below="@+id/fptypes_spinner"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="10dip"  />
+
+
+
+    </RelativeLayout>
+<!--                 <Spinner -->
+<!--             android:id="@+id/fptypes_spinner" -->
+<!--             android:layout_width="250dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_alignTop="@+id/addbtn" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--              /> -->
+
+<!-- <View -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="2dip" -->
+<!--     android:layout_below="@+id/addbtn" -->
+<!--     android:background="#FF909090" -->
+<!--     android:layout_marginTop="10dp" /> -->
+
+<!--         <ListView -->
+<!--             android:id="@+id/overviewlist" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="420dp" -->
+<!--             android:layout_below="@+id/addbtn" -->
+<!--             android:layout_marginBottom="2dip" -->
+<!--             android:layout_marginTop="10dip"  /> -->
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/addbtn" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:layout_marginRight="30dp" -->
+            
+<!--             android:background="#006600" -->
+<!--             android:paddingTop="5dp" -->
+<!--             android:src="@drawable/fp_create_button" /> -->
+
+<!--     </RelativeLayout> -->

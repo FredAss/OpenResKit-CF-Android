@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:id="@+id/strbutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Start festlegen:" 
+        android:layout_marginTop="5dp"
+         android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/endbutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/strbutton"
+        android:text="Ende festlegen:" 
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/strtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/strbutton" />
+
+    <TextView
+        android:id="@+id/endtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/endbutton"
+        android:layout_toRightOf="@+id/strbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+             
+        />
+
+<Button
+    android:id="@+id/acceptdistance"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/endbutton"
+    android:text="Bestätigen"
+    android:visibility="gone"
+    android:layout_marginLeft="10dp"
+/>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headline1"
+        android:layout_marginTop="150dp"
+        android:paddingBottom="10dp"
+        android:background="#000000" />
+
+<com.google.android.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/view2"
+    android:apiKey="03ctT--CEu6LiU6LAImEecYtA-wBYwgCLGJg3hA"
+    android:clickable="true" >
+</com.google.android.maps.MapView>
+<!--     05BUY30XJl6OgGyFfdQx1Rk92RXHt7QH1Q1inJQ -->
+</RelativeLayout>

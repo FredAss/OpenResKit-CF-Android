@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <item android:id="@+id/downloadSync" android:icon="@android:drawable/ic_menu_rotate" android:title="Download"></item>    
+    <item android:id="@+id/uploadSync" android:icon="@android:drawable/ic_menu_upload" android:title="Upload"></item>
+    <item android:icon="@android:drawable/ic_menu_preferences" android:id="@+id/settings" android:title="Einstellungen"></item>
+    <item android:id="@+id/deleteAll" android:icon="@android:drawable/ic_menu_delete" android:title="Alle löschen"></item>
+    <item android:id="@+id/exit" android:orderInCategory="2" android:icon="@android:drawable/ic_menu_close_clear_cancel" android:title="Beenden"></item>
+<!--     <item android:id="@+id/showMap" android:icon="@android:drawable/ic_menu_upload" android:title="Karte anzeigen"></item> -->
+    
+</menu>

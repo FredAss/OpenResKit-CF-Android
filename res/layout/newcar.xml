@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <TextView
+        android:id="@+id/carmodelstxt"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headline1"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="16dp"
+        android:text="Modell: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/carmodels_spinner"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/description"
+        android:layout_alignLeft="@+id/description" 
+		android:layout_below="@+id/view2"
+        android:layout_marginTop="17dp" />
+    
+        <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/nametxt"
+        android:layout_marginRight="14dp"
+        android:ems="10" 
+        android:hint="Beförderung">
+
+        <requestFocus />
+    </EditText>
+
+   
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headline1"
+        android:layout_below="@+id/carmodels_spinner"
+        android:layout_marginTop="14dp"
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/distancetypes_spinner"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"        
+      	android:layout_below="@+id/description"
+      	android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp" />
+    <TextView
+        android:id="@+id/distancetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headline1"
+		android:layout_below="@+id/description"
+        android:layout_marginTop="18dp"
+        android:text="Distanz: "        
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"  
+        android:layout_below="@+id/distancetypes_spinner"
+        android:digits="0123456789."
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/distancetypes_spinner"
+		android:layout_below="@+id/distancetypes_spinner"
+        android:layout_marginTop="12dp"
+        android:text="km"        
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/headline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="14dp"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="16dp"
+        android:text="Fahrt hinzufügen"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headline1"
+        android:layout_marginTop="14dp"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/distancetypes_spinner"
+        android:layout_alignLeft="@+id/headline1"
+        android:layout_below="@+id/consumptiontxt"
+        android:layout_marginTop="17dp"
+        android:text="Bestätigen" />
+
+     <TextView
+        android:id="@+id/fueltypestxt"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/distancetxt"
+        android:layout_below="@+id/distance"
+        android:layout_marginTop="16dp"
+        android:text="Treibstoff: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/fueltypes_spinner"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/description"
+        android:layout_alignLeft="@+id/description" 
+		android:layout_below="@+id/distance"
+        android:layout_marginTop="17dp" />
+    
+    
+    <TextView
+        android:id="@+id/consumptiontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/consumption"
+        android:layout_alignBottom="@+id/consumption"
+        android:layout_alignLeft="@+id/headline1"
+        android:text="Verbrauch: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/consumption"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fueltypes_spinner"
+        android:layout_alignLeft="@+id/description"  
+        android:layout_marginTop="14dp"
+        android:hint="in l/100km"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/headline1" />
+
+    <TextView
+        android:id="@+id/lkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/distancetypes_spinner"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/fueltypes_spinner"
+        android:text="l/100km"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

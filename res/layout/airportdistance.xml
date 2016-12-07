@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/headl"
+        android:text="Entfernung per Flughafentabelle bestimmen:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <View
+		android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090"
+     />
+    <TextView android:id="@+id/starttxt"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Startflughafen festlegen:"
+
+	 />
+    <Spinner android:id="@+id/startairport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"                
+
+         />
+    <TextView android:id="@+id/startcountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+  		/>
+    <TextView android:id="@+id/startlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+  		/>  
+  	<TextView android:id="@+id/startlng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+  		/>
+    <View
+	android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090"
+     />
+    <TextView android:id="@+id/endtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zielflughafen festlegen:"
+
+ 	 />
+    <Spinner android:id="@+id/endairport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView android:id="@+id/endcountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+  		/>
+    <TextView android:id="@+id/endlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+  		/>  
+  	<TextView android:id="@+id/endlng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+  		/>
+
+
+    <TextView android:id="@+id/endlatlngairport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+ 		/>
+    <View
+		android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090"
+     	/>
+    <Button 
+        android:id="@+id/calculate"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:text="Distanz berechnen"
+       	android:minWidth="160sp"
+ 		/>
+    <TextView android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+</LinearLayout>

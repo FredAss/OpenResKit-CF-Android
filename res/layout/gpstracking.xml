@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView 
+            android:id="@+id/headl"
+            android:text="Entfernung per GPS bestimmen:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <View
+	android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090"
+     />
+        
+        <Button android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start festlegen"            
+            android:minWidth="160sp"
+             />
+    <TextView android:id="@+id/startlatlng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+  />
+    <TextView android:id="@+id/startaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+    <View
+	android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090"
+     />
+        <Button android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ende festlegen"
+            android:minWidth="160sp"
+            />
+
+
+    <TextView android:id="@+id/endlatlng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+ />
+    <TextView android:id="@+id/endaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+        <View
+	android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090"
+     />
+    <Button android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distanz berechnen"
+            android:minWidth="160sp"
+ />
+        <TextView android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+</LinearLayout>

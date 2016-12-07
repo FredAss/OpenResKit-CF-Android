@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="flighttypes_array">
+        <item>Langstrecke</item>
+        <item>Mittelstrecke</item>
+        <item>Kurzstrecke</item>
+    </string-array>
+    <string-array name="positiontypes_array">
+        <item>Flug</item>
+        <item>Autofahrt</item>
+        <item>Öffentlicher Verkehr</item>
+        <item>Energieverbrauch</item>
+    </string-array>
+        <string-array name="footprinttypes_array">
+        <item>Carbon Footprint</item>
+        <item>Water Footprint</item>
+    </string-array>
+        <string-array name="fueltypes_array">
+        <item>Benzin</item>
+        <item>Diesel</item>
+    </string-array>
+    <string-array name="distancetypes_array">
+        <item>Eingabeart wählen</item>
+        <item>per Direkteingabe</item>
+        <item>per Google Maps</item>
+        <item>per GPS Tracking</item>
+        <item>per Flughafentabelle</item>
+    </string-array>
+    <string-array name="transporttypes_array">
+        <item>Fernzug</item>
+        <item>Regionalzug</item>
+        <item>Metro</item>
+        <item>Linienbus</item>
+        <item>Reisebus</item>
+        <item>Straßenbahn</item>
+    </string-array>
+    <string-array name="energytypes_array">
+        <item>Heizöl</item>
+        <item>Erdgas</item>
+        <item>Steinkohle</item>
+        <item>Braunkohle</item>
+        <item>Strommix</item>
+        <item>Ökostrom</item>
+    </string-array>
+</resources>
